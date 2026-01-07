@@ -1,0 +1,51 @@
+<head>
+    <title> REGISTRATION FORM</title>
+    <script>
+        function fun(){
+            var FirstName =document.frm.txt1.value;
+            if(FirstName=="")
+            alert("name should be not emty");
+            var mobileNo =document.frm.txt2.value;
+            if(mob ileNo.length<10)
+            alert("mobileno should 10 digits");
+            var Email=document.frm.txt3.value;
+            if(!Email.includes("@"))
+            alert("email should contain @ symbol");
+            var password =document.frm.txt4.value;
+            if(password.length<8)
+            alert("password should be minimum 8 digits");
+        }
+    </script>
+</head>
+<body style="background-color:skyblue">
+    <form name="frm">
+        <h1>REGISTRATION FORM</h1>
+        FirstName:<input type="text"name="txt1"value=""><br><br>
+        Last Name:<input type="text"name="txt"value=""><br><br>
+        Course:
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JAVA</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>DEVOPS</option>
+        </select><br><br>
+        Gender: 
+        <input type="radio" name="gender" value="male">MALE
+       <input type="radio" name="gender" value="female">FEMALE
+        <input type="radio"  name="gender" value="other">OTHER<BR><BR>
+        mobileNo:<input type="text" name="txt2"value=""><br><br>
+        Email:<input type="text"name="txt3"value=""><br><br>
+        password:<input type="text"name="txt4"value=""><br><br>
+        Address:<br>
+        <textarea name:"address" rows="5" cols="100">
+        </textarea><br><br>
+        <input type="submit"name="sub"value="SUBMIT"
+        onclick="fun()">
+        <input type="button" value="clear">
+    </form>
+</body>
+ </html>
+
+ 
