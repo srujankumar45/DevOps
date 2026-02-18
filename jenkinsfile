@@ -1,0 +1,23 @@
+pipeline
+{
+  agent ay
+  stages
+   {
+     stage("build")
+       {
+         steps
+           {
+               echo "buliding project"
+               sh 'java HelloWorld.java'
+           }
+      }
+      stage("test")
+        {
+           steps
+             { 
+                echo "testing the project"
+                sh 'java Helloworld'
+             }
+       }
+   }
+}
